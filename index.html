@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - EduNexus | سياسة الخصوصية</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .language-switcher {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .lang-btn {
+            padding: 8px 16px;
+            border: 2px solid #3498db;
+            background: white;
+            color: #3498db;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+            font-size: 14px;
+        }
+
+        .lang-btn:hover {
+            background: #3498db;
+            color: white;
+        }
+
+        .lang-btn.active {
+            background: #3498db;
+            color: white;
+        }
+
+        body[dir="ltr"] .language-switcher {
+            left: auto;
+            right: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-top: 50px;
+        }
+
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            border-bottom: 2px solid #bdc3c7;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            color: #34495e;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p,
+        li {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        body[dir="ltr"] ul {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .highlight {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+        }
+
+        body[dir="ltr"] .highlight {
+            border-left: none;
+            border-right: 4px solid #3498db;
+        }
+
+        .date {
+            color: #7f8c8d;
+            font-style: italic;
+            margin-top: 30px;
+        }
+
+        .contact {
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+
+        .contact h3 {
+            margin-top: 0;
+            color: white;
+        }
+
+        .lang-content {
+            display: none;
+        }
+
+        .lang-content.active {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .language-switcher {
+                position: relative;
+                top: 0;
+                left: 0;
+                margin-bottom: 20px;
+                justify-content: center;
+            }
+
+            body[dir="ltr"] .language-switcher {
+                right: 0;
+            }
+
+            h1 {
+                margin-top: 0;
+            }
+
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="language-switcher">
+            <button class="lang-btn active" onclick="switchLanguage('ar')" id="btn-ar">العربية</button>
+            <button class="lang-btn" onclick="switchLanguage('en')" id="btn-en">English</button>
+        </div>
+
+        <!-- Arabic Content -->
+        <div class="lang-content active" id="content-ar">
+            <h1>سياسة الخصوصية لتطبيق EduNexus</h1>
+
+            <p><strong>تطبيق EduNexus</strong> ("نحن"، "لنا"، أو "تطبيقنا") يلتزم بحماية خصوصيتك. توضح سياسة الخصوصية
+                هذه كيفية جمع واستخدام وحماية المعلومات الشخصية الخاصة بك عند استخدام تطبيقنا.</p>
+
+            <div class="highlight">
+                <strong>آخر تحديث:</strong> 21 نوفمبر 2025
+            </div>
+
+            <h2>1. المعلومات التي نجمعها</h2>
+
+            <h3>أ. المعلومات التي تقدمها لنا:</h3>
+            <ul>
+                <li><strong>معلومات الحساب:</strong> الاسم، البريد الإلكتروني، رقم الهاتف (اختياري)</li>
+                <li><strong>المعلومات التعليمية:</strong> بيانات الكورسات، الأنشطة، الدرجات</li>
+                <li><strong>المحتوى المرفوع:</strong> الصور الشخصية، الملفات التعليمية</li>
+            </ul>
+
+            <h3>ب. المعلومات التي نجمعها تلقائياً:</h3>
+            <ul>
+                <li><strong>معلومات الجهاز:</strong> نوع الجهاز، نظام التشغيل، معرف الجهاز</li>
+                <li><strong>بيانات الاستخدام:</strong> كيفية استخدامك للتطبيق، التفاعلات</li>
+                <li><strong>معلومات الموقع:</strong> الموقع الجغرافي العام (إذا سمحت بذلك)</li>
+            </ul>
+
+            <h2>2. كيفية استخدام المعلومات</h2>
+
+            <p>نستخدم المعلومات المجمعة للأغراض التالية:</p>
+
+            <ul>
+                <li><strong>توفير الخدمة:</strong> تشغيل التطبيق وتقديم المميزات التعليمية</li>
+                <li><strong>إدارة الحساب:</strong> إنشاء وإدارة حسابك الشخصي</li>
+                <li><strong>التواصل:</strong> إرسال إشعارات مهمة حول الأنشطة والكورسات</li>
+                <li><strong>التحسين:</strong> تحسين أداء التطبيق وتجربة المستخدم</li>
+                <li><strong>الدعم الفني:</strong> تقديم المساعدة وحل المشكلات</li>
+            </ul>
+
+            <h2>3. مشاركة المعلومات</h2>
+
+            <p>نحن لا نبيع أو نؤجر أو نشارك معلوماتك الشخصية مع أطراف ثالثة لأغراض تسويقية. قد نشارك معلوماتك في الحالات
+                التالية:</p>
+
+            <ul>
+                <li><strong>مع مقدمي الخدمات:</strong> مع شركاء تقنيين موثوقين (مثل Supabase لتخزين البيانات)</li>
+                <li><strong>للامتثال القانوني:</strong> عند الحاجة للامتثال للقوانين أو الأوامر القضائية</li>
+                <li><strong>لحماية الحقوق:</strong> لحماية حقوقنا أو حقوق الآخرين</li>
+            </ul>
+
+            <h2>4. أمان البيانات</h2>
+
+            <p>نتخذ تدابير أمنية متقدمة لحماية معلوماتك:</p>
+
+            <ul>
+                <li><strong>التشفير:</strong> جميع البيانات مشفرة أثناء النقل والتخزين</li>
+                <li><strong>التحكم في الوصول:</strong> وصول محدود للبيانات حسب الدور الوظيفي</li>
+                <li><strong>النسخ الاحتياطي الآمن:</strong> تخزين آمن للبيانات</li>
+                <li><strong>التحديثات الأمنية:</strong> تحديثات منتظمة للأمان</li>
+            </ul>
+
+            <h2>5. حقوقك</h2>
+
+            <p>لديك الحقوق التالية بشأن بياناتك الشخصية:</p>
+
+            <ul>
+                <li><strong>الوصول:</strong> طلب نسخة من البيانات الشخصية المخزنة</li>
+                <li><strong>التصحيح:</strong> طلب تصحيح المعلومات غير الدقيقة</li>
+                <li><strong>الحذف:</strong> طلب حذف بياناتك الشخصية</li>
+                <li><strong>الاعتراض:</strong> الاعتراض على معالجة بياناتك</li>
+                <li><strong>النقل:</strong> طلب نقل بياناتك إلى خدمة أخرى</li>
+            </ul>
+
+            <h2>6. ملفات تعريف الارتباط (Cookies)</h2>
+
+            <p>قد نستخدم ملفات تعريف الارتباط وتقنيات مشابهة لتحسين تجربة المستخدم وتحليل الاستخدام. يمكنك إدارة إعدادات
+                ملفات تعريف الارتباط من خلال إعدادات متصفحك.</p>
+
+            <h2>7. خصوصية الأطفال</h2>
+
+            <p>تطبيقنا غير موجه للأطفال دون سن 13 عاماً. نحن لا نجمع عمداً معلومات شخصية من الأطفال دون موافقة الوالدين.
+                إذا علمنا أننا جمعنا معلومات من طفل دون موافقة، سنقوم بحذفها فوراً.</p>
+
+            <h2>8. التغييرات على سياسة الخصوصية</h2>
+
+            <p>قد نحدث سياسة الخصوصية هذه من وقت لآخر. سنخطرك بأي تغييرات جوهرية عبر البريد الإلكتروني أو إشعار في
+                التطبيق قبل أن تصبح التغييرات نافذة.</p>
+
+            <h2>9. الاحتفاظ بالبيانات</h2>
+
+            <p>نحتفظ ببياناتك الشخصية للمدة اللازمة لتقديم الخدمة وللامتثال للمتطلبات القانونية. يمكنك طلب حذف حسابك في
+                أي وقت.</p>
+
+            <h2>10. الروابط لمواقع أخرى</h2>
+
+            <p>قد يحتوي تطبيقنا على روابط لمواقع أخرى. نحن لسنا مسؤولين عن ممارسات الخصوصية أو محتوى هذه المواقع.</p>
+
+            <div class="contact">
+                <h3>تواصل معنا</h3>
+                <p>إذا كان لديك أي أسئلة حول سياسة الخصوصية هذه أو كيفية التعامل مع بياناتك، يرجى التواصل معنا:</p>
+                <ul>
+                    <li><strong>البريد الإلكتروني:</strong> mostafahashem319@gmail.com</li>
+                    <li><strong>الدعم الفني:</strong> mostafahashem319@gmail.com</li>
+                </ul>
+            </div>
+
+            <p class="date">آخر تحديث: 21 نوفمبر 2025</p>
+
+            <p>باستخدام تطبيق EduNexus، فإنك توافق على جمع واستخدام معلوماتك كما هو موضح في سياسة الخصوصية هذه.</p>
+        </div>
+
+        <!-- English Content -->
+        <div class="lang-content" id="content-en">
+            <h1>Privacy Policy for EduNexus App</h1>
+
+            <p><strong>EduNexus App</strong> ("we", "us", or "our app") is committed to protecting your privacy. This
+                Privacy Policy explains how we collect, use, and protect your personal information when you use our app.
+            </p>
+
+            <div class="highlight">
+                <strong>Last Updated:</strong> November 21, 2025
+            </div>
+
+            <h2>1. Information We Collect</h2>
+
+            <h3>a. Information You Provide to Us:</h3>
+            <ul>
+                <li><strong>Account Information:</strong> Name, email address, phone number (optional)</li>
+                <li><strong>Educational Information:</strong> Course data, activities, grades</li>
+                <li><strong>Uploaded Content:</strong> Profile pictures, educational files</li>
+            </ul>
+
+            <h3>b. Information We Collect Automatically:</h3>
+            <ul>
+                <li><strong>Device Information:</strong> Device type, operating system, device ID</li>
+                <li><strong>Usage Data:</strong> How you use the app, interactions</li>
+                <li><strong>Location Information:</strong> General geographic location (if you allow it)</li>
+            </ul>
+
+            <h2>2. How We Use Information</h2>
+
+            <p>We use the collected information for the following purposes:</p>
+
+            <ul>
+                <li><strong>Service Provision:</strong> Operating the app and providing educational features</li>
+                <li><strong>Account Management:</strong> Creating and managing your personal account</li>
+                <li><strong>Communication:</strong> Sending important notifications about activities and courses</li>
+                <li><strong>Improvement:</strong> Improving app performance and user experience</li>
+                <li><strong>Technical Support:</strong> Providing assistance and resolving issues</li>
+            </ul>
+
+            <h2>3. Information Sharing</h2>
+
+            <p>We do not sell, rent, or share your personal information with third parties for marketing purposes. We
+                may share your information in the following cases:</p>
+
+            <ul>
+                <li><strong>With Service Providers:</strong> With trusted technical partners (such as Supabase for data
+                    storage)</li>
+                <li><strong>For Legal Compliance:</strong> When required to comply with laws or court orders</li>
+                <li><strong>To Protect Rights:</strong> To protect our rights or the rights of others</li>
+            </ul>
+
+            <h2>4. Data Security</h2>
+
+            <p>We take advanced security measures to protect your information:</p>
+
+            <ul>
+                <li><strong>Encryption:</strong> All data is encrypted during transmission and storage</li>
+                <li><strong>Access Control:</strong> Limited access to data based on role</li>
+                <li><strong>Secure Backup:</strong> Secure data storage</li>
+                <li><strong>Security Updates:</strong> Regular security updates</li>
+            </ul>
+
+            <h2>5. Your Rights</h2>
+
+            <p>You have the following rights regarding your personal data:</p>
+
+            <ul>
+                <li><strong>Access:</strong> Request a copy of stored personal data</li>
+                <li><strong>Correction:</strong> Request correction of inaccurate information</li>
+                <li><strong>Deletion:</strong> Request deletion of your personal data</li>
+                <li><strong>Objection:</strong> Object to processing of your data</li>
+                <li><strong>Portability:</strong> Request transfer of your data to another service</li>
+            </ul>
+
+            <h2>6. Cookies</h2>
+
+            <p>We may use cookies and similar technologies to improve user experience and analyze usage. You can manage
+                cookie settings through your browser settings.</p>
+
+            <h2>7. Children's Privacy</h2>
+
+            <p>Our app is not directed to children under 13 years of age. We do not knowingly collect personal
+                information from children without parental consent. If we learn that we have collected information from
+                a child without consent, we will delete it immediately.</p>
+
+            <h2>8. Changes to Privacy Policy</h2>
+
+            <p>We may update this Privacy Policy from time to time. We will notify you of any material changes via email
+                or in-app notification before the changes take effect.</p>
+
+            <h2>9. Data Retention</h2>
+
+            <p>We retain your personal data for as long as necessary to provide the service and comply with legal
+                requirements. You can request deletion of your account at any time.</p>
+
+            <h2>10. Links to Other Websites</h2>
+
+            <p>Our app may contain links to other websites. We are not responsible for the privacy practices or content
+                of these websites.</p>
+
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <p>If you have any questions about this Privacy Policy or how we handle your data, please contact us:
+                </p>
+                <ul>
+                    <li><strong>Email:</strong> mostafahashem319@gmail.com</li>
+                    <li><strong>Technical Support:</strong> mostafahashem319@gmail.com</li>
+                </ul>
+            </div>
+
+            <p class="date">Last Updated: November 21, 2025</p>
+
+            <p>By using the EduNexus app, you agree to the collection and use of your information as described in this
+                Privacy Policy.</p>
+        </div>
+    </div>
+
+    <script>
+        // Get saved language preference or default to Arabic
+        const savedLang = localStorage.getItem('privacyPolicyLang') || 'ar';
+
+        // Switch language function
+        function switchLanguage(lang) {
+            // Hide all content
+            document.querySelectorAll('.lang-content').forEach(content => {
+                content.classList.remove('active');
+            });
+
+            // Show selected language content
+            document.getElementById('content-' + lang).classList.add('active');
+
+            // Update button states
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.getElementById('btn-' + lang).classList.add('active');
+
+            // Update HTML attributes
+            document.documentElement.lang = lang;
+            document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+            // Save preference
+            localStorage.setItem('privacyPolicyLang', lang);
+        }
+
+        // Initialize with saved language
+        switchLanguage(savedLang);
+    </script>
+</body>
+
+</html>
