@@ -6,6 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - EduNexus | سياسة الخصوصية</title>
     <style>
+        :root {
+            /* Light Mode Colors */
+            --bg-primary: #FAFAFA;
+            --bg-surface: #FFFFFF;
+            --text-primary: #1F2937;
+            --text-secondary: #6B7280;
+            --text-tertiary: #9CA3AF;
+            --border-color: #E5E7EB;
+            --divider-color: #F3F4F6;
+            --primary-color: #6366F1;
+            --secondary-color: #8B5CF6;
+            --highlight-bg: #ECF0F1;
+            --contact-bg: #6366F1;
+        }
+
+        [data-theme="dark"] {
+            /* Dark Mode Colors */
+            --bg-primary: #0F1115;
+            --bg-surface: #151922;
+            --text-primary: #E5E7EB;
+            --text-secondary: #9CA3AF;
+            --text-tertiary: #6B7280;
+            --border-color: #1F2937;
+            --divider-color: #111827;
+            --primary-color: #6366F1;
+            --secondary-color: #8B5CF6;
+            --highlight-bg: #1F2937;
+            --contact-bg: #6366F1;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -17,33 +47,50 @@
             line-height: 1.6;
             margin: 0;
             padding: 20px;
-            background-color: #f5f5f5;
-            color: #333;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
             max-width: 900px;
             margin: 0 auto;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         .container {
-            background: white;
+            background: var(--bg-surface);
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             position: relative;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .language-switcher {
+        [data-theme="dark"] .container {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .controls {
             position: absolute;
             top: 20px;
             left: 20px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        body[dir="ltr"] .controls {
+            left: auto;
+            right: 20px;
+        }
+
+        .language-switcher {
             display: flex;
             gap: 10px;
         }
 
         .lang-btn {
             padding: 8px 16px;
-            border: 2px solid #3498db;
-            background: white;
-            color: #3498db;
+            border: 2px solid var(--primary-color);
+            background: var(--bg-surface);
+            color: var(--primary-color);
             border-radius: 5px;
             cursor: pointer;
             font-weight: 600;
@@ -52,43 +99,67 @@
         }
 
         .lang-btn:hover {
-            background: #3498db;
+            background: var(--primary-color);
             color: white;
         }
 
         .lang-btn.active {
-            background: #3498db;
+            background: var(--primary-color);
             color: white;
         }
 
-        body[dir="ltr"] .language-switcher {
-            left: auto;
-            right: 20px;
+        .theme-toggle {
+            padding: 8px 16px;
+            border: 2px solid var(--primary-color);
+            background: var(--bg-surface);
+            color: var(--primary-color);
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .theme-toggle:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .theme-icon {
+            font-size: 18px;
         }
 
         h1 {
-            color: #2c3e50;
-            border-bottom: 3px solid #3498db;
+            color: var(--text-primary);
+            border-bottom: 3px solid var(--primary-color);
             padding-bottom: 10px;
             margin-top: 50px;
+            transition: color 0.3s ease;
         }
 
         h2 {
-            color: #34495e;
+            color: var(--text-primary);
             margin-top: 30px;
-            border-bottom: 2px solid #bdc3c7;
+            border-bottom: 2px solid var(--border-color);
             padding-bottom: 5px;
+            transition: color 0.3s ease, border-color 0.3s ease;
         }
 
         h3 {
-            color: #34495e;
+            color: var(--text-primary);
             margin-top: 20px;
             margin-bottom: 10px;
+            transition: color 0.3s ease;
         }
 
         p,
         li {
             margin-bottom: 15px;
+            color: var(--text-primary);
+            transition: color 0.3s ease;
         }
 
         ul {
@@ -102,25 +173,28 @@
         }
 
         .highlight {
-            background-color: #ecf0f1;
+            background-color: var(--highlight-bg);
             padding: 15px;
-            border-left: 4px solid #3498db;
+            border-left: 4px solid var(--primary-color);
             margin: 20px 0;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
         }
 
         body[dir="ltr"] .highlight {
             border-left: none;
-            border-right: 4px solid #3498db;
+            border-right: 4px solid var(--primary-color);
         }
 
         .date {
-            color: #7f8c8d;
+            color: var(--text-secondary);
             font-style: italic;
             margin-top: 30px;
+            transition: color 0.3s ease;
         }
 
         .contact {
-            background-color: #3498db;
+            background-color: var(--contact-bg);
             color: white;
             padding: 20px;
             border-radius: 5px;
@@ -129,6 +203,11 @@
 
         .contact h3 {
             margin-top: 0;
+            color: white;
+        }
+
+        .contact p,
+        .contact li {
             color: white;
         }
 
@@ -141,7 +220,7 @@
         }
 
         @media (max-width: 768px) {
-            .language-switcher {
+            .controls {
                 position: relative;
                 top: 0;
                 left: 0;
@@ -149,7 +228,7 @@
                 justify-content: center;
             }
 
-            body[dir="ltr"] .language-switcher {
+            body[dir="ltr"] .controls {
                 right: 0;
             }
 
@@ -166,9 +245,15 @@
 
 <body>
     <div class="container">
-        <div class="language-switcher">
-            <button class="lang-btn active" onclick="switchLanguage('ar')" id="btn-ar">العربية</button>
-            <button class="lang-btn" onclick="switchLanguage('en')" id="btn-en">English</button>
+        <div class="controls">
+            <div class="language-switcher">
+                <button class="lang-btn active" onclick="switchLanguage('ar')" id="btn-ar">العربية</button>
+                <button class="lang-btn" onclick="switchLanguage('en')" id="btn-en">English</button>
+            </div>
+            <button class="theme-toggle" onclick="toggleTheme()" id="theme-toggle">
+                <span class="theme-icon" id="theme-icon">🌙</span>
+                <span id="theme-text">Dark</span>
+            </button>
         </div>
 
         <!-- Arabic Content -->
@@ -401,8 +486,39 @@
     </div>
 
     <script>
-        // Get saved language preference or default to Arabic
+        // Get saved preferences
         const savedLang = localStorage.getItem('privacyPolicyLang') || 'ar';
+        const savedTheme = localStorage.getItem('privacyPolicyTheme') || 'light';
+
+        // Initialize theme
+        function initTheme() {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            updateThemeButton();
+        }
+
+        // Toggle theme function
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('privacyPolicyTheme', newTheme);
+            updateThemeButton();
+        }
+
+        // Update theme button text and icon
+        function updateThemeButton() {
+            const theme = document.documentElement.getAttribute('data-theme');
+            const themeIcon = document.getElementById('theme-icon');
+            const themeText = document.getElementById('theme-text');
+
+            if (theme === 'dark') {
+                themeIcon.textContent = '☀️';
+                themeText.textContent = document.documentElement.lang === 'ar' ? 'فاتح' : 'Light';
+            } else {
+                themeIcon.textContent = '🌙';
+                themeText.textContent = document.documentElement.lang === 'ar' ? 'داكن' : 'Dark';
+            }
+        }
 
         // Switch language function
         function switchLanguage(lang) {
@@ -426,9 +542,13 @@
 
             // Save preference
             localStorage.setItem('privacyPolicyLang', lang);
+
+            // Update theme button text
+            updateThemeButton();
         }
 
-        // Initialize with saved language
+        // Initialize
+        initTheme();
         switchLanguage(savedLang);
     </script>
 </body>
